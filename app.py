@@ -5,7 +5,7 @@ from datetime import datetime,timedelta
 import json
 
 # Étape 1 : Récupérer la page web
-url = 'https://allevents.in/tunis/workshops?ref=tagmap'
+url = 'URL_DE_LA_PAGE' #update this with the webpage URL
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
