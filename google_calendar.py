@@ -17,7 +17,7 @@ if not creds or not creds.valid:
         creds.refresh(Request())
     else:
         flow = InstalledAppFlow.from_client_secrets_file(
-            'client_secret_382232635225-7uc9k9fnm6n9gpn022mco86jscuv89bi.apps.googleusercontent.com.json', SCOPES  # Ensure this file is correctly named and placed
+            'client_secret.json', SCOPES  # update this with yours " client_secret.json " 
         )
         creds = flow.run_local_server(port=8080)
     with open('token.json', 'w') as token:
