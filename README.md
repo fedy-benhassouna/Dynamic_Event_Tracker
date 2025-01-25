@@ -47,13 +47,18 @@ Dynamic Event Tracker is a Python-based web scraping tool that extracts event in
     ```python
     url = 'URL_DE_LA_PAGE'
     ```
+2. Update the client_secret.json in [google_calendar.py](http://_vscodecontentref_/0) to the client secret you get from google cloud console :
+    ```python
+        flow = InstalledAppFlow.from_client_secrets_file(
+            'client_secret.json', SCOPES )
+    ```
 
-2. Run the [app.py](http://_vscodecontentref_/1) script to scrape the events and save them to [events.json](http://_vscodecontentref_/2):
+3. Run the [app.py](http://_vscodecontentref_/1) script to scrape the events and save them to [events.json](http://_vscodecontentref_/2):
     ```bash
     python app.py
     ```
 
-3. Run the [google_calendar.py](http://_vscodecontentref_/3) script to add the events to Google Calendar:
+4. Run the [google_calendar.py](http://_vscodecontentref_/3) script to add the events to Google Calendar:
     ```bash
     python google_calendar.py
     ```
